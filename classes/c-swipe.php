@@ -1,23 +1,13 @@
 <?php
-
 class Swipe {
     public int $id;
-    public string $user;
-    public string $animal;
-    public SwipeDirection $direction;
+    public int $user_id;
+    public int $animal_id;
+    public string $direction;
 }
 
 enum SwipeDirection: string {
     case LEFT = 'left';
     case RIGHT = 'right';
 }
-
-
-/*
-
-$swipe = new Swipe();
-$swipe->direction = SwipeDirection::RIGHT; // or LEFT
-
-*/
-
 ?>
